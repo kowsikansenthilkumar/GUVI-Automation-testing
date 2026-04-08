@@ -1,0 +1,23 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+       int ump=153;
+       int organ=ump;
+       int count=0;
+       int sum=0;
+       int t=ump;
+       while(t>0){
+           count++;
+           t=t/10;
+       }while(ump>0){
+           int d=ump%10;
+           sum+=Math.pow(d,count);
+           ump=ump/10;
+       }if(organ==sum){
+           System.out.println("is am");
+       }else{
+           System.out.println("is not am");
+       }
+    }
+}
