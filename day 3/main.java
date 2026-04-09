@@ -1,11 +1,11 @@
 import java.util.*;
 
-class student {
+class Student {
     String name;
     int regno;
     List<Integer> marks;
 
-    student(String name, int regno, List<Integer> marks) {
+    Student(String name, int regno, List<Integer> marks) {
         this.name = name;
         this.regno = regno;
         this.marks = marks;
@@ -34,12 +34,12 @@ class student {
     }
 }
 
-public class main {
+public class Main {
     public static void main(String[] args) {
 
         List<Integer> m1 = Arrays.asList(80, 70, 75, 90, 85);
 
-        student s1 = new student("Kowsikan", 101, m1);
+        Student s1 = new Student("Kowsikan", 101, m1);
 
         s1.performance();
     }
